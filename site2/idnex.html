@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+	<meta charset="UTF-8"> <!-- Unicode -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Mobile shit -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Import w3.css -->
+	<link rel="stylesheet" href="font-hack/web/hack.css"> <!-- Import hack font from files -->
+
+	<head>
+		<title>title</title>
+
+		<style>
+			body {
+				font-family: Hack, monospace;
+				color: white;
+			}
+
+			#headerlol {
+				height: 50px;
+				background: red; /* For browsers that do not support gradients */
+				background: linear-gradient(to right, #ff85f5 0%, #c385ff 100%); /* Standard syntax (must be last) */
+				vertical-align: middle;
+				text-align: center;
+			}
+
+			.gradient {
+				background: -webkit-linear-gradient(left, #ff85f5, #c385ff);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			
+			/* Style the header with a grey background and some padding */
+			.header {
+				overflow: hidden;
+				background: red; /* For browsers that do not support gradients */
+				background: linear-gradient(to right, #ff85f5 0%, #c385ff 100%); /* Standard syntax (must be last) */
+				padding: 20px 10px;
+			}
+
+			/* Style the header links */
+			.header a {
+			 	float: left;
+			 	color: white;
+			 	text-align: center;
+			 	padding: 12px;
+			 	text-decoration: none;
+			 	font-size: 18px;
+			 	line-height: 25px;
+			 	border-radius: 4px;
+			}
+
+			/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+			.header a.logo {
+				font-size: 25px;
+				font-weight: bold;
+			}
+
+			/* Change the background color on mouse-over */
+			.header a:hover {
+				background-color: #fff;
+				color: black;
+			}
+
+			/* Style the active/current link*/
+			.header a.active {
+				background-color: rgba(0,0,0,0);
+				color: white;
+			}
+
+			/* Float the link section to the right */
+			.header-right {
+				float: right;
+			}
+
+			/* Border style 1 */
+			.border {
+				color:white;
+				word-wrap: break-word;
+				border-style: solid;
+				background: linear-gradient(to right, #ff85f5 0%, #c385ff 100%);
+			}
+
+			/* Border style 2 */
+			.border2 {
+				background: white;
+
+				word-wrap: break-word;
+
+				border: 5px solid green;  
+				border-image-source: linear-gradient(to right, #ff85f5, #c385ff);
+				border-image-slice: 20;
+			}
+
+			/* Border style 3 */
+			.border3 {
+				background: white;
+
+				word-wrap: break-word;
+
+				border-style: solid;
+				background: -webkit-linear-gradient(left, #ff85f5, #c385ff); 
+				-webkit-background-clip: text; 
+				-webkit-text-fill-color: transparent;
+			}
+
+			/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+			@media screen and (max-width: 500px) {
+			  .header a {
+			    float: none;
+			    display: block;
+			    text-align: left;
+			  }
+			  .header-right {
+			    float: none;
+			  }
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<img src="screenshotsmall.png" alt="jo" height="50">
+			<div class="header-right">
+				<a class="active" href="#home">Home</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+			</div>
+		</div> 
+
+		<br>
+
+		<!--Border style 1 -->
+		<div class="border w3-container">
+			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaa</p>
+		</div>
+
+		<!--Border style 2 -->
+		<div style="color:white; word-wrap: break-word; border-style: solid; background: linear-gradient(to right, #ff85f5 0%, #c385ff 100%);">
+			<div class="border2 w3-container">
+				<p style="background: -webkit-linear-gradient(left, #ff85f5, #c385ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+			</div>
+		</div>
+
+		<!--Border style 3 -->
+		<div class="border3 w3-container">
+			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaa<br>aaaaa</p>
+		</div>
+	</body>
+</html>
