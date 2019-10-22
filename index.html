@@ -10,8 +10,24 @@
 		<link rel="stylesheet" href="web/hack.css"> <!--Import hack font from files-->
 
 		<style>
+			   @keyframes colorchange
+		    {
+		      0%   {background: #ff85f5;}
+		      50%  {background: #c385ff;}
+		      100% {background: #ff85f5;}
+		    }
+		    /* Chrome & Safari*/
+		    @-webkit-keyframes colorchange
+		    {
+		      0%   {background: #ff85f5;}
+		      50%  {background: #c385ff;}
+		      100% {background: #ff85f5;}
+		    }
 			body {
-				background: linear-gradient(to right, #ff85f5 0%, #c385ff 100%);
+				/* background: linear-gradient(to right, #ff85f5 0%, #c385ff 100%); */
+				animation: colorchange 30s infinite; /* animation-name followed by duration in seconds*/
+         		/* you could also use milliseconds (ms) or something like 2.5s */
+      			-webkit-animation: colorchange 30s infinite; /* Chrome and Safari */
 			}
 
 			body,h1 {font-family: "Hack", monospace}
@@ -29,16 +45,18 @@
 		<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
 
 			<div class="w3-display-topleft w3-padding-large w3-xlarge">
-					<img src="screenshot.png" alt="jo" height="20">
+				<img src="https://cdn.discordapp.com/attachments/430437716254261258/636282321435230209/jo.png" alt="jo" height="32">
 			</div>
 			<div class="w3-display-middle">
-				<h1 class="w3-jumbo w3-animate-top w3-center">idk</h1>
+				<h1 class="w3-jumbo w3-animate-top w3-center">meow</h1>
 				<hr class="w3-border-white" style="margin:auto;width:70%">
-				<p class="w3-large w3-center">sample text lol</p>
+				<p class="w3-large w3-center">hi this is my own site on catgirl.party</p>
+
+				<p class="w3-center">if you would like an email address, contact me</p>
 			</div>
 			<div class="w3-display-bottomleft w3-padding-large">
 				<img src="discord.png" alt="Discord:" height="16"> joo#2111
-				<br> <img src="github.png" alt="GitHub:" height="16"> j0w0<br> <img src="gitlab.png" alt="GitLab:" height="16"> j0_<br> <img src="reddit.png" alt="Reddit:" height="16"> u/no lol<br> <img src="mail.png" alt="Email:" height="16"> joo@420blaze.it
+				<br> <img src="github.png" alt="GitHub:" height="16"> j0w0<br> <img src="gitlab.png" alt="GitLab:" height="16"> j0_<br> <img src="mail.png" alt="Email:" height="16"> jo@catgirl.party
 			</div>
 		</div>
 	</body>
